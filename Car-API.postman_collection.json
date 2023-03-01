@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "7e4a2329-5f73-4695-9bca-1aa72bf0e3b9",
+		"name": "Car-API",
+		"description": "# Introduction\nIt is API of cars do CRUD and select, deselect a car.\n\n# Overview\nExpiration of JWT tocken.\n\n# Authentication\nJWT API Authentication.\n\n# Error Codes\nCheck for uncautch exception.\n\n# Rate limit\nI'm not sure can you suggest me?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/cars/allCars",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars/allCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"allCars"
+					]
+				},
+				"description": "Get all the cars"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/allCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars",
+								"allCars"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/cars/allDrivers?manufacturer=Honda. Inc&engineType=Electric Engine",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars/allDrivers?manufacturer=Honda. Inc&engineType=Electric Engine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"allDrivers"
+					],
+					"query": [
+						{
+							"key": "manufacturer",
+							"value": "Honda. Inc"
+						},
+						{
+							"key": "engineType",
+							"value": "Electric Engine"
+						}
+					]
+				},
+				"description": "Get all the drivers with filter"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/allDrivers?manufacturer=Honda. Inc&engineType=Electric Engine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars",
+								"allDrivers"
+							],
+							"query": [
+								{
+									"key": "manufacturer",
+									"value": "Honda. Inc"
+								},
+								{
+									"key": "engineType",
+									"value": "Electric Engine"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/driver/signUp?name=mohan&password=mohan@123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/driver/signUp?name=mohan&password=mohan@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driver",
+						"signUp"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mohan"
+						},
+						{
+							"key": "password",
+							"value": "mohan@123"
+						}
+					]
+				},
+				"description": "For SignUp the driver"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/driver/signUp?name=mohan&password=mohan@123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"driver",
+								"signUp"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "mohan"
+								},
+								{
+									"key": "password",
+									"value": "mohan@123"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/driver/authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/driver/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driver",
+						"authenticate"
+					]
+				},
+				"description": "For JWT Authentication"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/driver/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"driver",
+								"authenticate"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/cars?name=Tesla&model=MODEL X&licensePlate=LIC1234&seatCount=8&convertible=true&rating=4.5&engineType=Electric  Engine&manufacturer=Tesla, Inc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars?name=Tesla&model=MODEL X&licensePlate=LIC1234&seatCount=8&convertible=true&rating=4.5&engineType=Electric  Engine&manufacturer=Tesla, Inc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tesla"
+						},
+						{
+							"key": "model",
+							"value": "MODEL X"
+						},
+						{
+							"key": "licensePlate",
+							"value": "LIC1234"
+						},
+						{
+							"key": "seatCount",
+							"value": "8"
+						},
+						{
+							"key": "convertible",
+							"value": "true"
+						},
+						{
+							"key": "rating",
+							"value": "4.5"
+						},
+						{
+							"key": "engineType",
+							"value": "Electric  Engine"
+						},
+						{
+							"key": "manufacturer",
+							"value": "Tesla, Inc"
+						}
+					]
+				},
+				"description": "add a car"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/cars?name=Tesla&model=MODEL X&licensePlate=LIC1234&seatCount=8&convertible=true&rating=4.5&engineType=Electric  Engine&manufacturer=Tesla, Inc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Tesla"
+								},
+								{
+									"key": "model",
+									"value": "MODEL X"
+								},
+								{
+									"key": "licensePlate",
+									"value": "LIC1234"
+								},
+								{
+									"key": "seatCount",
+									"value": "8"
+								},
+								{
+									"key": "convertible",
+									"value": "true"
+								},
+								{
+									"key": "rating",
+									"value": "4.5"
+								},
+								{
+									"key": "engineType",
+									"value": "Electric  Engine"
+								},
+								{
+									"key": "manufacturer",
+									"value": "Tesla, Inc"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/driver/select?carId=3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/driver/select?carId=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driver",
+						"select"
+					],
+					"query": [
+						{
+							"key": "carId",
+							"value": "3"
+						}
+					]
+				},
+				"description": "Select a car"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/driver/select?carId=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"driver",
+								"select"
+							],
+							"query": [
+								{
+									"key": "carId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/driver/deselect?driverId=2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/driver/deselect?driverId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driver",
+						"deselect"
+					],
+					"query": [
+						{
+							"key": "driverId",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Deselect a car"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/driver/deselect?driverId=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"driver",
+								"deselect"
+							],
+							"query": [
+								{
+									"key": "driverId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/cars",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars"
+					]
+				},
+				"description": "Update a car"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/cars",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars"
+					]
+				},
+				"description": "Delete a car"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
